@@ -8,7 +8,7 @@ module.exports = {
     // The output files
     output: {
         // where we want to put our outpt files
-        path: path.resolve(__dirname, "dist/"),
+        path: path.resolve(__dirname, "dist/assets"),
         // The name for our main file
         filename: "bundle.js"
     }, 
