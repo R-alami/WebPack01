@@ -9,5 +9,16 @@ module.exports = {
         path: path.resolve(__dirname, "dist/"),
         // The name for our main file
         filename: "bundle.js"
+    }, 
+     module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            'css-loader'
+          ]
+        }
+      ]
     }
 }
