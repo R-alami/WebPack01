@@ -1,5 +1,7 @@
 const path = require("path");
 
+const webpack = require('webpack');
+
 module.exports = {
     // Th main file for our js
     entry: "./src/index.js",
@@ -20,5 +22,12 @@ module.exports = {
           ]
         }
       ]
-    }
+    },
+    devServer: {
+      contentBase: './dist',
+      hot: true
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin()
+    ];
 }

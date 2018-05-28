@@ -1,6 +1,7 @@
 {
     "scripts": {
-        "build": "webpack --config webpack.config.js"
+        "build": "webpack --config webpack.config.js",
+        "start": "webpack-dev-server"
     },
     "dependencies": {
         "css-loader": "^0.28.11",
